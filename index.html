@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="title">
+      Oliver Benites
+    </h1>
+
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#about-me">Sobre Mim</a></li>
+        <li class="nav-item"><a href="#projects">Projetos</a></li>
+        <li class="nav-item"><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-me" id="about-me">
+      <h2 class="work-title">
+        Desenvolvedor Júnior
+      </h2>
+
+      <div class="about">
+        <img src="/src/assets/IMG_20230227_185316_347.jpg" class="profile-img" alt="" />
+
+        <div class="about-text">
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas, mas apaixonado por Antropologia. Trabalho como desenvolvedor há quase 1 e nunca paro de aprender e compartilhar conhecimento.
+          </p>
+          
+          <p>
+            Meu foco atual é o desenvolvimento web, Moodle e automação via integrações com RD Station. Porém, estou aproveitando a faculdade para explorar novas áreas e linguagens dentro do universo de tecnologia.
+          </p>
+
+          <p>
+            Planejo aprofundar ainda mais meus conhecimentos em frameworks web, estudar Java ou Go para construir páginas cada vez mais seguras, escaláveis e performáticas, aprender Dart e Flutter para o desenvolvimento de aplicativos multiplataforma e me aventurar com C Sharp.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="skills">
+        <h3>Skills Principais</h3>
+
+        <ul>
+          <li>
+            <span>JavaScript</span>
+            <span class="material-symbols-outlined size-40">javascript</span>
+          </li>
+          <li>
+            <span>HTML</span>
+            <span class="material-symbols-outlined size-40">html</span>
+          </li>
+          <li>
+            <span>CSS | SASS</span>
+            <span class="material-symbols-outlined size-40">css</span>
+          </li>
+          <li>
+            <span>PHP | Moodle</span>
+            <span class="material-symbols-outlined size-40">php</span>
+          </li>
+          <li>
+            <span>MariaDB | MySQL</span>
+            <span class="material-symbols-outlined size-24">database</span>
+          </li>
+          <li>
+            <span>Figma</span>
+            <span class="material-symbols-outlined size-24">design_services</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="work-title">
+        Projetos
+      </h2>
+
+      <!-- os projetos são populados de forma dinâmica por uma lista json adicionada via javascript  -->
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="work-title">
+        Contato
+      </h2>
+
+      <form action="" id="contact-form">
+        <div class="contact-inputs">
+          <label for="name">Nome</label>
+          <input type="text" name="name" class="contact-name" required />
+        </div>
+
+        <div class="contact-inputs">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" class="contact-email" id="contact-email" required />
+        </div>
+
+        <div class="contact-inputs">
+          <label for="message">Mensagem</label>
+          <textarea name="message" class="contact-message" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        <p class="error-message hidden">E-mail inválido! Por favor, insira um endereço de e-mail válido.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Oliver Benites</p>
+  </footer>
+
+  <script src="/src/scripts/main.js"></script>
+</body>
+
+</html>

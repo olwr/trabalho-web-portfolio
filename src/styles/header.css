@@ -1,0 +1,46 @@
+header {
+  position: sticky;
+  top: 0;
+  margin: 0 0 var(--L1) 0;
+  padding: var(--S5) 0;
+  gap: var(--M3);
+  border-radius: 0 0 12px 12px;
+  background-color: rgba(98, 79, 110, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--L4);
+  color: var(--color-rich-black);
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--S5);
+  font-weight: var(--font500);
+}
+
+ul .nav-item {
+  padding: var(--S1);
+  box-shadow: var(--elevation-nav);
+  border-radius: 2px;
+  border: 2px solid #0000; /* espaçamento para a borda */
+  --g: #0000 90deg, var(--color-rich-black) 0;
+  --p: 10px 10px border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    2px left  2px, var(--g)) 0    0    / var(--p),
+    conic-gradient(from 180deg at top    2px right 2px, var(--g)) 100% 0    / var(--p),
+    conic-gradient(from 0deg   at bottom 2px left  2px, var(--g)) 0    100% / var(--p),
+    conic-gradient(from -90deg at bottom 2px right 2px, var(--g)) 100% 100% / var(--p);
+}
+
+.nav-item a {
+  color: var(--color-apple-green);
+  color: var(--color-maize);
+}

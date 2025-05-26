@@ -1,0 +1,53 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--S5);
+  margin: var(--S5) 0;
+}
+
+.project-link-img {
+  text-align: center;
+}
+
+.project-img {
+  width: 92%;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--S5);
+}
+
+.project-name {
+  font-size: var(--M3);
+  font-weight: var(--font700);
+}
+
+.project-type {
+  color: var(--color-maize);
+  font-size: var(--M2);
+  font-weight: var(--font600);
+}
+
+.project-stacks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--S3);
+}
+
+.stack-item {
+  padding: var(--S1) var(--S2);
+  font-size: var(--S3);
+  font-weight: var(--font600);
+  border-radius: 12px;
+  box-shadow: var(--focus);
+  background: cornflowerblue; /* fallback caso não tenha uma cor válida definida no json */
+}
+
+.stack-item:hover {
+  transform: scale(1.2);
+}

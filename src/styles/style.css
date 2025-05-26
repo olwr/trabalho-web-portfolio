@@ -1,0 +1,153 @@
+@import url('vars.css');
+@import url('reset.css');
+/* @import url('temp.css'); */
+@import url('header.css');
+@import url('about.css');
+@import url('project.css');
+@import url('contact.css');
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-fairy-tale);
+  /* fallback caso a gradiente falhe por incompatibilidade */
+
+  /* gradiente com compatibilidade máxima */
+  background: -webkit-linear-gradient(180deg, rgba(227, 191, 205, 1) 0%, rgba(163, 77, 128, 1) 56%);
+  background: -moz-linear-gradient(180deg, rgba(227, 191, 205, 1) 0%, rgba(163, 77, 128, 1) 56%);
+  background: linear-gradient(180deg, rgba(227, 191, 205, 1) 0%, rgba(163, 77, 128, 1) 56%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E3BFCD", endColorstr="#A34D80", GradientType=0);
+}
+
+main,
+header,
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  gap: var(--L1);
+}
+
+section {
+  width: 96%;
+  border-radius: 12px;
+  background: var(--color-dark-green);
+  color: var(--white);
+  padding: var(--M2) var(--M1);
+  gap: var(--M1);
+  margin: var(--M1) 0;
+}
+
+img {
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: var(--L1);
+  font-weight: var(--font800);
+  color: var(--color-apple-green);
+  padding: var(--S2);
+}
+
+footer {
+  color: var(--white);
+  background: var(--color-gunmetal);
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  padding: var(--S4);
+  font-size: var(--S5);
+  margin-top: var(--M3);
+}
+
+@media screen and (width >=640px) {
+  section {
+    width: 88%;
+  }
+
+  .about {
+    flex-direction: row;
+    gap: var(--L1);
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 40%;
+  }
+
+  .about-text {
+    width: 72%;
+    justify-content: center;
+  }
+
+  .project-img {
+    width: 82%;
+  }
+
+  .stack-item {
+    font-size: var(--S4);
+  }
+
+  form {
+    width: 72%;
+  }
+}
+
+@media screen and (width >=768px) {
+  .profile-img {
+    width: 36%;
+  }
+
+  .about-text {
+    width: 74%;
+    justify-content: flex-start;
+    margin-top: var(--M1);
+  }
+
+  .project-img {
+    width: 76%;
+  }
+
+  form {
+    width: 68%;
+  }
+}
+
+@media screen and (width >=1024px) {
+  section {
+    width: 80%;
+    gap: var(--S3);
+  }
+
+  .about {
+    gap: var(--L3);
+  }
+
+  .profile-img {
+    width: 20%;
+  }
+
+  .about-text {
+    width: 80%;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .project {
+    flex-direction: row;
+  }
+
+  .project-link-img {
+    width: 60%;
+  }
+
+  .project-details {
+    width: 40%;
+  }
+
+  form {
+    width: 64%;
+  }
+}

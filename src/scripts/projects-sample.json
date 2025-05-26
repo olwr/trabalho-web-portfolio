@@ -1,0 +1,16 @@
+[
+  {
+    "name": "nome do projeto",
+    "type": "tipo de projeto",
+    "image": "caminho/link da imagem do projeto",
+    "link": "link do projeto",
+    "stacks":
+        [
+          ["stack", "cor"], 
+          ["stack", "cor"], 
+          ["stack", "cor"], 
+          ["stack", "cor"], 
+          ["stack", "cor"]
+        ]
+  }
+]

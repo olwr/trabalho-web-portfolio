@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+
+:root {
+  /* tamanhos | espaçamentos (padrão: Small | Medium | Large) */
+  --S1: .4rem;
+  --S2: .8rem;
+  --S3: 1rem;
+  --S4: 1.2rem;
+  --S5: 1.4rem;
+  --M1: 1.6rem;
+  --M2: 1.8rem;
+  --M3: 2rem;
+  --L1: 2.4rem;
+  --L2: 3.2rem;
+  --L3: 4rem;
+  --L4: 4.8rem;
+
+  /* fontes */
+  --font-title:  "VT323", monospace;
+  --font-body: "Poppins", sans-serif;
+  --font500: 500;
+  --font600: 600;
+  --font700: 700;
+  --font800: 800;
+
+  /* paleta de cores */
+  --color-maize: #FAE647ff;
+  --color-apple-green: #A7B843ff;
+  --color-fairy-tale: #E3BFCDff;
+  --color-magenta-haze: #A34D80ff;
+  --color-gunmetal: #2C3437ff;
+  --color-dark-green: #062E2Eff;
+  --color-rich-black: #0E1F22ff;
+  --color-warning: #FF4500;
+
+  --white: #F3F3F3;
+  --black: #191919;
+
+  /* elevação */
+  --focus: 0 4px 8px 0 rgba(0, 0, 0, 18%);
+  --deep: 0 8px 16px 0 rgba(0, 0, 0, 24%);
+  --elevation-nav: 2px 2px 0 2px rgba(76, 94, 107, 20%);
+}
