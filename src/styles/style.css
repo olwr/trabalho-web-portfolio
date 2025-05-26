@@ -39,6 +39,7 @@ section {
   padding: var(--M2) var(--M1);
   gap: var(--M1);
   margin: var(--M1) 0;
+  box-shadow: var(--deep);
 }
 
 img {
