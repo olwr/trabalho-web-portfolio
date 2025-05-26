@@ -8,9 +8,8 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--color-fairy-tale);
   /* fallback caso a gradiente falhe por incompatibilidade */
-
+  background: var(--color-fairy-tale);
   /* gradiente com compatibilidade máxima */
   background: -webkit-linear-gradient(180deg, rgba(227, 191, 205, 1) 0%, rgba(163, 77, 128, 1) 56%);
   background: -moz-linear-gradient(180deg, rgba(227, 191, 205, 1) 0%, rgba(163, 77, 128, 1) 56%);
